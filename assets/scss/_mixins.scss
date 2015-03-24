@@ -1,0 +1,40 @@
+@mixin box-shadow {
+  -webkit-box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.75);
+}
+
+@mixin gradient-orient ($gradient-orient, $color1, $color2) {
+  @if $gradient-orient == vertical {
+    background: $color1;
+    background: -moz-linear-gradient(top, $color1 0%, $color2 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, $color1), color-stop(100%, $color2));
+    background: -webkit-linear-gradient(top, $color1 0%, $color2 100%);
+    background: -o-linear-gradient(top, $color1 0%, $color2 100%);
+    background: -ms-linear-gradient(top, $color1 0%, $color2 100%);
+    background: linear-gradient(to bottom, $color1 0%, $color2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=0 );
+  }
+
+  @else if $gradient-orient == horizontal {
+    background: $color1;
+    background: -moz-linear-gradient(left, $color1 0%, $color2 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, $color1), color-stop(100%, $color2));
+    background: -webkit-linear-gradient(left, $color1 0%, $color2 100%);
+    background: -o-linear-gradient(left, $color1 0%, $color2 100%);
+    background: -ms-linear-gradient(left, $color1 0%, $color2 100%);
+    background: linear-gradient(to right, $color1 0%, $color2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=1 );
+  }
+
+  @else if $gradient-orient == radial {
+    background: $color1;
+    background: -moz-radial-gradient(center, ellipse cover, $color1 0%, $color2 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, $color1), color-stop(100%, $color2));
+    background: -webkit-radial-gradient(center, ellipse cover, $color1 0%, $color2 100%);
+    background: -o-radial-gradient(center, ellipse cover, $color1 0%, $color2 100%);
+    background: -ms-radial-gradient(center, ellipse cover, $color1 0%, $color2 100%);
+    background: radial-gradient(ellipse at center, $color1 0%, $color2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=1 );
+  }
+}

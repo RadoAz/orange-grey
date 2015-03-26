@@ -1,3 +1,17 @@
+html, body {
+  height: 100%;
+}
+
 body {
   @include gradient-orient(radial, $grey1, $grey2);
+  height: 100%;
+
+  h1, ul {
+    color: $font-color;
+  }
+
+  h1 {
+    font-family: $font1, Verdana;
+    font-size: 48px;
+  }
 }

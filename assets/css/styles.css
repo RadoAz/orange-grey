@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'BauhausLightCTTRegular';
+  src: url(../fonts/BauhausLightCTT_Regular.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'BAUHS93';
+  src: url(../fonts/BAUHS93.ttf) format("truetype"); }
+
 /** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -28,6 +36,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+html, body {
+  height: 100%; }
+
 body {
   background: #828282;
   background: -moz-radial-gradient(center, ellipse cover, #828282 0%, #444 100%);
@@ -36,4 +47,49 @@ body {
   background: -o-radial-gradient(center, ellipse cover, #828282 0%, #444 100%);
   background: -ms-radial-gradient(center, ellipse cover, #828282 0%, #444 100%);
   background: radial-gradient(ellipse at center, #828282 0%, #444 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=1 ); }
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=1 );
+  height: 100%; }
+  body h1, body ul {
+    color: #fff000; }
+  body h1 {
+    font-family: 'BAUHS93', Verdana;
+    font-size: 48px; }
+
+aside {
+  border-width: 0 12px 0 0;
+  border-style: solid;
+  -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#9a0000), to(#c90100)) 1 1;
+  -webkit-border-image: -webkit-linear-gradient(#9a0000, #c90100) 1 1;
+  -moz-border-image: -moz-linear-gradient(#9a0000, #c90100) 1 1;
+  -o-border-image: -o-linear-gradient(#9a0000, #c90100) 1 1;
+  border-image: linear-gradient(to bottom, #9a0000, #c90100) 1 1;
+  background: #c40808;
+  background: -moz-linear-gradient(top, #c40808 0%, #ff2400 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #c40808), color-stop(100%, #ff2400));
+  background: -webkit-linear-gradient(top, #c40808 0%, #ff2400 100%);
+  background: -o-linear-gradient(top, #c40808 0%, #ff2400 100%);
+  background: -ms-linear-gradient(top, #c40808 0%, #ff2400 100%);
+  background: linear-gradient(to bottom, #c40808 0%, #ff2400 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=0 );
+  height: 83.14088%;
+  width: 290px;
+  float: left;
+  padding: 30px;
+  margin: 8.42956% 0;
+  -webkit-box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 0.75); }
+  aside ul {
+    font-family: 'BauhausLightCTTRegular', Verdana;
+    font-size: 30px;
+    margin-bottom: 100px; }
+  aside .decor {
+    height: 16px;
+    width: 100%;
+    border-width: 2px 0 8px 0;
+    border-style: solid;
+    -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f89801), to(#fff000)) 1 0;
+    -webkit-border-image: -webkit-linear-gradient(#f89801, #fff000) 1 0;
+    -moz-border-image: -moz-linear-gradient(#f89801, #fff000) 1 0;
+    -o-border-image: -o-linear-gradient(#f89801, #fff000) 1 0;
+    border-image: linear-gradient(to right, #f89801, #fff000) 1 0; }

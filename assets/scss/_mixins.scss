@@ -38,3 +38,18 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=1 );
   }
 }
+
+@mixin border-gradient($px, $direction, $color1, $color2, $leftright) {
+  border-width: $px;
+  border-style: solid;
+  -webkit-border-image:
+    -webkit-gradient(linear, 0 0, 0 100%, from($color1), to($color2)) 1 $leftright;
+  -webkit-border-image:
+    -webkit-linear-gradient($color1, $color2) 1 $leftright;
+  -moz-border-image:
+    -moz-linear-gradient($color1, $color2) 1 $leftright;
+  -o-border-image:
+    -o-linear-gradient($color1, $color2) 1 $leftright;
+  border-image:
+    linear-gradient($direction, $color1, $color2) 1 $leftright;
+}

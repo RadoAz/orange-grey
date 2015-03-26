@@ -98,7 +98,7 @@ aside {
   z-index: 1; }
   aside:after {
     width: 290px;
-    bottom: 9%; }
+    bottom: 10%; }
   aside ul {
     font-family: 'bauhauslightctt', Verdana;
     font-size: 1.8em;

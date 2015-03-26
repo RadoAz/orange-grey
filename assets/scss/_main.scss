@@ -1,0 +1,30 @@
+main {
+  @include gradient-orient (vertical, $orange1, $orange2);
+  @include box-shadow;
+  height: 76%;
+  width: $main-width;
+  box-sizing: border-box;
+  float: left;
+  margin-top: 8%;
+  padding: $padding;
+  border-width: 17px 17px 0 0;
+  border-color: $mainbordercolor;
+  border-style: solid;
+  position: relative;
+
+  &:after {
+    width: $main-width;
+    bottom: 3.5%;
+  }
+
+  p {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 1em;
+    color: inherit;
+    line-height: 1.3em;
+
+    .first-word {
+      font-size: 1.5em;
+    }
+  }
+}

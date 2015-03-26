@@ -1,24 +1,25 @@
 aside {
-  @include border-gradient((0 12px 0 0), to bottom, $asbordcol1, $asbordcol2, 1);
+  @include border-gradient((0 $aside-border-width 0 0), to bottom, $asbordcol1, $asbordcol2, 1);
   @include gradient-orient (vertical, $red1, $red2);
-  height: 83.14087759815243%;
-  width: 290px;
-  float: left;
-  padding: 30px;
-  margin: 8.429561200923786% 0;
   @include box-shadow;
+  height: 85%;
+  width: $aside-width;
+  float: left;
+  padding: $padding;
+  margin-top: 5%;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 1;
 
+  &:after {
+    width: $aside-width;
+    bottom: 10%;
+  }
 
   ul {
     font-family: $font2, Verdana;
-    font-size: 30px;
-    margin-bottom: 100px;
-  }
-
-  .decor {
-    height: 16px;
-    width: 100%;
-    @include border-gradient((2px 0 8px 0), to right, $hrcolor1, $hrcolor2, 0);
+    font-size: 1.8em;
+    margin-top: 30%;
   }
 }
 

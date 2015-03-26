@@ -3,7 +3,7 @@ var sass = require('gulp-sass');
 var path = 'assets/scss/**/*.scss';
 gulp.task('sass', function () {
   gulp.src(path)
-    .pipe(sass())
+    .pipe(sass({errLogToConsole: true}))
     .pipe(gulp.dest('./assets/css'));
 });
 

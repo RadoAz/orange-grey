@@ -1,6 +1,6 @@
 // fonts
 $font1: 'BAUHS93';
-$font2: 'BauhausLightCTTRegular';
+$font2: 'bauhauslightctt';
 
 //bg grey gradient
 $grey1: #828282;
@@ -11,8 +11,8 @@ $red1: #c40808;
 $red2: #ff2400;
 
 //main orng gradient
-$orng1: #ff5400;
-$orng2: #ff9600;
+$orange1: #ff5400;
+$orange2: #ff9600;
 
 //aside text color
 $font-color: #fff000;
@@ -26,7 +26,12 @@ $asbordcol1: #9a0000;
 $asbordcol2: #c90100;
 
 //main border
-$mainbrdrcol: #ed6b02;
+$mainbordercolor: #ed6b02;
 
 //main font color
 $mainfontcol: #202020;
+
+$aside-width: 290px;
+$aside-border-width: 12px;
+$main-width: 720px;
+$padding: 30px;

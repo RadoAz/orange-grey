@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'bauhauslightctt';
-  src: url(../fonts/bauhauslightctt.ttf) format("truetype"); }
+  font-family: 'BLight';
+  src: url(../fonts/Bauhaus-Std-Light.ttf) format("truetype"); }
 
 @font-face {
-  font-family: 'BAUHS93';
-  src: url(../fonts/font.ttf) format("truetype"); }
+  font-family: 'BBold';
+  src: url(../fonts/BAUHS93.ttf) format("truetype"); }
 
 /** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -37,8 +37,7 @@ table {
   border-spacing: 0; }
 
 html, body {
-  height: 100%;
-  min-width: 1010px; }
+  height: 100%; }
 
 body {
   background: #828282;
@@ -49,25 +48,35 @@ body {
   background: -ms-radial-gradient(center, ellipse cover, #828282 0%, #444 100%);
   background: radial-gradient(ellipse at center, #828282 0%, #444 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=1 );
-  height: 100%; }
-  body h1, body ul {
-    color: #fff000; }
+  height: 100%;
+  min-width: 1015px;
+  overflow: hidden; }
   body h1 {
-    font-family: 'BAUHS93', Verdana;
+    font-family: 'BBold', Verdana;
     font-size: 48px; }
-  body main:after, body aside:after {
-    border-width: 2px 0 8px 0;
-    border-style: solid;
-    -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f89801), to(#fff000)) 1 0;
-    -webkit-border-image: -webkit-linear-gradient(#f89801, #fff000) 1 0;
-    -moz-border-image: -moz-linear-gradient(#f89801, #fff000) 1 0;
-    -o-border-image: -o-linear-gradient(#f89801, #fff000) 1 0;
-    border-image: linear-gradient(to right, #f89801, #fff000) 1 0;
-    content: "";
-    height: 16px;
-    position: absolute;
-    display: block;
-    left: 0; }
+  body p {
+    font-family: Verdana, Helvetica, Arial;
+    line-height: 1.2em; }
+  body aside, body main {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 0.75); }
+    body aside:after, body main:after {
+      border-width: 2px 0 8px 0;
+      border-style: solid;
+      -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f89801), to(#fff000)) 1 0;
+      -webkit-border-image: -webkit-linear-gradient(#f89801, #fff000) 1 0;
+      -moz-border-image: -moz-linear-gradient(#f89801, #fff000) 1 0;
+      -o-border-image: -o-linear-gradient(#f89801, #fff000) 1 0;
+      border-image: linear-gradient(to right, #f89801, #fff000) 1 0;
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      height: 16px; }
 
 aside {
   border-width: 0 12px 0 0;
@@ -85,54 +94,65 @@ aside {
   background: -ms-linear-gradient(top, #c40808 0%, #ff2400 100%);
   background: linear-gradient(to bottom, #c40808 0%, #ff2400 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=0 );
-  -webkit-box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 0.75);
-  height: 85%;
+  position: relative;
+  height: 80%;
   width: 290px;
   float: left;
   padding: 30px;
-  margin-top: 5%;
-  position: relative;
-  box-sizing: border-box;
+  margin-top: 4%;
   z-index: 1; }
+  aside h1, aside ul {
+    color: #fff000; }
+  aside ul {
+    font-family: 'BLight';
+    font-size: 1.8em;
+    margin-top: 35%; }
+    aside ul > li > a {
+      color: inherit;
+      text-decoration: none; }
+      aside ul > li > a:hover {
+        color: #f89801; }
   aside:after {
     width: 290px;
     bottom: 10%; }
-  aside ul {
-    font-family: 'bauhauslightctt', Verdana;
-    font-size: 1.8em;
-    margin-top: 30%; }
 
 main {
-  background: #ff5400;
-  background: -moz-linear-gradient(top, #ff5400 0%, #ff9600 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, #ff5400), color-stop(100%, #ff9600));
-  background: -webkit-linear-gradient(top, #ff5400 0%, #ff9600 100%);
-  background: -o-linear-gradient(top, #ff5400 0%, #ff9600 100%);
-  background: -ms-linear-gradient(top, #ff5400 0%, #ff9600 100%);
-  background: linear-gradient(to bottom, #ff5400 0%, #ff9600 100%);
+  background: #ff9600;
+  background: -moz-linear-gradient(top, #ff9600 0%, #ff5400 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #ff9600), color-stop(100%, #ff5400));
+  background: -webkit-linear-gradient(top, #ff9600 0%, #ff5400 100%);
+  background: -o-linear-gradient(top, #ff9600 0%, #ff5400 100%);
+  background: -ms-linear-gradient(top, #ff9600 0%, #ff5400 100%);
+  background: linear-gradient(to bottom, #ff9600 0%, #ff5400 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=0 );
-  -webkit-box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 0.75);
-  height: 76%;
-  width: 720px;
-  box-sizing: border-box;
-  float: left;
-  margin-top: 8%;
-  padding: 30px;
-  border-width: 17px 17px 0 0;
+  transition: all .4s ease;
   border-color: #ed6b02;
   border-style: solid;
-  position: relative; }
+  border-width: 17px 17px 0 0;
+  color: #202020;
+  float: left;
+  height: 73%;
+  left: -725px;
+  margin-top: 5.7%;
+  opacity: 0;
+  padding: 30px;
+  position: relative;
+  width: 725px; }
+  main.open {
+    opacity: 1;
+    left: 0; }
+  main p > .first-word {
+    font-size: 1.5em; }
   main:after {
-    width: 720px;
-    bottom: 3.5%; }
-  main p {
-    font-family: Verdana, Helvetica, sans-serif;
-    font-size: 1em;
-    color: inherit;
-    line-height: 1.3em; }
-    main p .first-word {
-      font-size: 1.5em; }
+    width: 725px;
+    bottom: 4.6%; }
+  main > div {
+    display: none; }
+    main > div.showed {
+      display: block; }
+    main > div ul {
+      margin-top: 20px;
+      padding-left: 20px;
+      list-style: circle; }
+      main > div ul > li {
+        margin-bottom: 10px; }

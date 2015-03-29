@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'bauhauslightctt';
-  src: url(../fonts/bauhauslightctt.ttf) format("truetype");
+  font-family: $font-light;
+  src: url(../fonts/Bauhaus-Std-Light.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'BAUHS93';
-  src: url(../fonts/font.ttf) format("truetype");
+  font-family: $font-bold;
+  src: url(../fonts/BAUHS93.ttf) format("truetype");
 }
 

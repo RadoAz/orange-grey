@@ -4,6 +4,12 @@
   box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.75);
 }
 
+@mixin box-sizing ($box-sizing) {
+  -webkit-box-sizing: $box-sizing;
+  -moz-box-sizing: $box-sizing;
+  box-sizing: $box-sizing;
+}
+
 @mixin gradient-orient ($gradient-orient, $color1, $color2) {
   @if $gradient-orient == vertical {
     background: $color1;
@@ -53,4 +59,3 @@
   border-image:
     linear-gradient($direction, $color1, $color2) 1 $leftright;
 }
-
